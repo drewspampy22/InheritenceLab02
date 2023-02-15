@@ -29,11 +29,11 @@ public class InheritenceDemo {
             {
                 Worker worker = (Worker) workerArrayList.get(i);
                 System.out.println(worker.getFormalName());
+                System.out.println(worker.displayWeeklyPay(40));
+                System.out.println("\n");
                 System.out.println(worker.displayWeeklyPay(50));
                 System.out.println("\n");
-                System.out.println(worker.displayWeeklyPay(70));
-                System.out.println("\n");
-                System.out.println(worker.displayWeeklyPay(100));
+                System.out.println(worker.displayWeeklyPay(40));
             }
             System.out.println("\n");
         }
