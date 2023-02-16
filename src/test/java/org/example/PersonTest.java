@@ -36,14 +36,14 @@ class PersonTest {
 
     @Test
     void setFirstName() {
-        this.p6.setFName("Anthony");
-        Assertions.assertEquals("Anthony", this.p6.getFName());
+        this.p6.setfirstName("Anthony");
+        Assertions.assertEquals("Anthony", this.p6.getfirstName());
     }
 
     @Test
     void setLastName() {
-        this.p4.setLName("Ero");
-        Assertions.assertEquals("Ero", this.p4.getLName());
+        this.p4.setlastName("Ero");
+        Assertions.assertEquals("Ero", this.p4.getlastName());
     }
 
     @Test

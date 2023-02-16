@@ -4,34 +4,34 @@ import java.time.Year;
 
 public class Person {
 
-    private String FName;
-    private String LName;
+    private String firstName;
+    private String lastName;
     private String ID;
     private String title;
     private int YOB;
 
-    public Person(String FName, String LName, String ID, String title, int YOB) {
-        this.FName = FName;
-        this.LName = LName;
+    public Person(String firstName, String lastName, String ID, String title, int YOB) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.ID = ID;
         this.title = title;
         this.YOB = YOB;
     }
 
-    public String getFName() {
-        return FName;
+    public String getfirstName() {
+        return firstName;
     }
 
-    public void setFName(String FName) {
-        this.FName = FName;
+    public void setfirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLName() {
-        return LName;
+    public String getlastName() {
+        return lastName;
     }
 
-    public void setLName(String LName) {
-        this.LName = LName;
+    public void setlastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getID() {
@@ -61,8 +61,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "FName='" + FName + '\'' +
-                ", LName='" + LName + '\'' +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", ID='" + ID + '\'' +
                 ", title='" + title + '\'' +
                 ", YOB=" + YOB +
@@ -70,10 +70,10 @@ public class Person {
     }
 
     public String getFullName() {
-        return FName + " " + LName;
+        return firstName + " " + lastName;
     }
     public String getFormalName() {
-        return title + " " + LName;
+        return title + " " + lastName;
     }
     public int getAge(){
       return Integer.parseInt(Year.now().toString()) - YOB;
@@ -83,7 +83,7 @@ public class Person {
     }
     public String toCSVRecordMethod()
     {
-        return getFName() + ", " + getLName() + ", " + getID() + ", " + getTitle() + ", " + getAge();
+        return getfirstName() + ", " + getlastName() + ", " + getID() + ", " + getTitle() + ", " + getAge();
     }
 }
 
